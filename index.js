@@ -1,4 +1,4 @@
-// Reverse String
+// 1. Reverse String
 const reverseString = (str) => {
   let reversed = "";
   if (str === "" || str.length === 1) {
@@ -15,11 +15,10 @@ const reverseString = (str) => {
   }
   return reversed;
 };
-
 // const result = reverseString("Tonmoy");
 // console.log(result);
 
-// FizzBuzz
+// 2 FizzBuzz
 const FizzBuzz = (n) => {
   if (n >= 1 && n <= 100) {
     for (let i = 1; i <= n; i++) {
@@ -38,10 +37,9 @@ const FizzBuzz = (n) => {
     return;
   }
 };
-
 // FizzBuzz(100);
 
-// Find the Largest Number in an Array
+// 3. Find the Largest Number in an Array
 const findLargestNumber = (numArr) => {
   let storeMaxNum = numArr[0];
   for (let i = 0; i < numArr.length; i++) {
@@ -51,13 +49,12 @@ const findLargestNumber = (numArr) => {
   }
   return storeMaxNum;
 };
-
 // const findLargeResult = findLargestNumber([
 //   -2, 3, 4, 5, -4, 5, 6, 7, 5, 7, 8, 6,
 // ]);
 // console.log(findLargeResult);
 
-// Check for Palindrome
+// 4 Check for Palindrome
 const palindrome = (string) => {
   const normalized = string.toLowerCase();
   const reversed = normalized.split("").reverse().join("").toLowerCase();
@@ -67,11 +64,10 @@ const palindrome = (string) => {
     return false;
   }
 };
-
 // const palindromeResult = palindrome("Madam");
 // console.log(palindromeResult);
 
-// Sum of Array Elements
+// 5. Sum of Array Elements
 const sum = (numberArr) => {
   let total = 0;
 
@@ -90,11 +86,10 @@ const sum = (numberArr) => {
 
   return total;
 };
-
 // const sumResult = sum([100, 400, 100]);
 // console.log(sumResult);
 
-// Count Vowels
+// 6. Count Vowels
 const CountVoels = (string) => {
   let count = 0;
   const vowels = ["a", "e", "i", "o", "u"];
@@ -107,21 +102,18 @@ const CountVoels = (string) => {
 
   return count;
 };
-
 // const countVoelsResult = CountVoels("Tonmoy Hasan");
 // console.log(countVoelsResult);
 
-// Even or Odd List
-
+// 7. Even or Odd List
 const findEvenNumber = (numArr) => {
   const findEven = numArr.filter((num) => num % 2 === 0);
   return findEven;
 };
-
 // const findEvenNumberResult = findEvenNumber([3, 5, 5, 7, 7]);
 // console.log(findEvenNumberResult);
 
-// Factorial Calculation
+// 8. Factorial Calculation
 const factorialCalculation = (num) => {
   if (num < 0 || num > 12) {
     return "Invalid input";
@@ -134,11 +126,10 @@ const factorialCalculation = (num) => {
 
   return result;
 };
-
 // const factorialResult = factorialCalculation(12);
 // console.log(factorialResult);
 
-// Find the Minimum in an Array
+// 9. Find the Minimum in an Array
 const findMinimumValue = (arr) => {
   let minimumNum = arr[0];
 
@@ -150,6 +141,13 @@ const findMinimumValue = (arr) => {
 
   return minimumNum;
 };
-
 // const findMinimunResult = findMinimumValue([4, 5, 7, 8]);
 // console.log(findMinimunResult);
+
+//10.  Remove Duplicates from a List
+const removeDuplicates = (duplicateArr) => {
+  return [...new Set(duplicateArr)];
+};
+
+const removeDuplicateResult = removeDuplicates([2, 3, 2, 3, 4, 5, 4, 3]);
+console.log(removeDuplicateResult);
