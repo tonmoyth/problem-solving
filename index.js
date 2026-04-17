@@ -52,7 +52,21 @@ const findLargestNumber = (numArr) => {
   return storeMaxNum;
 };
 
-const findLargeResult = findLargestNumber([
-  -2, 3, 4, 5, -4, 5, 6, 7, 5, 7, 8, 6,
-]);
-console.log(findLargeResult);
+// const findLargeResult = findLargestNumber([
+//   -2, 3, 4, 5, -4, 5, 6, 7, 5, 7, 8, 6,
+// ]);
+// console.log(findLargeResult);
+
+// Check for Palindrome
+const palindrome = (string) => {
+  const normalized = string.toLowerCase();
+  const reversed = normalized.split("").reverse().join("").toLowerCase();
+  if (normalized === reversed) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const palindromeResult = palindrome("Madam");
+console.log(palindromeResult);
