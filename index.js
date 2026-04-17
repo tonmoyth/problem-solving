@@ -68,5 +68,28 @@ const palindrome = (string) => {
   }
 };
 
-const palindromeResult = palindrome("Madam");
-console.log(palindromeResult);
+// const palindromeResult = palindrome("Madam");
+// console.log(palindromeResult);
+
+// Sum of Array Elements
+const sum = (numberArr) => {
+  let total = 0;
+
+  if (numberArr.length === 0) {
+    return 0;
+  }
+
+  if (numberArr.length > 500) {
+    console.log("You can only sum less than or equal to 500 elements");
+    return;
+  }
+
+  for (let i = 0; i < numberArr.length; i++) {
+    total += numberArr[i];
+  }
+
+  return total;
+};
+
+// const sumResult = sum([100, 400, 100]);
+// console.log(sumResult);
