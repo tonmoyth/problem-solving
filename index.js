@@ -39,4 +39,20 @@ const FizzBuzz = (n) => {
   }
 };
 
-FizzBuzz(100);
+// FizzBuzz(100);
+
+// Find the Largest Number in an Array
+const findLargestNumber = (numArr) => {
+  let storeMaxNum = numArr[0];
+  for (let i = 0; i < numArr.length; i++) {
+    if (numArr[i] > storeMaxNum) {
+      storeMaxNum = numArr[i];
+    }
+  }
+  return storeMaxNum;
+};
+
+const findLargeResult = findLargestNumber([
+  -2, 3, 4, 5, -4, 5, 6, 7, 5, 7, 8, 6,
+]);
+console.log(findLargeResult);
