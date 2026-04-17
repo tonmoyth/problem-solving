@@ -108,5 +108,15 @@ const CountVoels = (string) => {
   return count;
 };
 
-const countVoelsResult = CountVoels("Tonmoy Hasan");
-console.log(countVoelsResult);
+// const countVoelsResult = CountVoels("Tonmoy Hasan");
+// console.log(countVoelsResult);
+
+// Even or Odd List
+
+const findEvenNumber = (numArr) => {
+  const findEven = numArr.filter((num) => num % 2 === 0);
+  return findEven;
+};
+
+// const findEvenNumberResult = findEvenNumber([3, 5, 5, 7, 7]);
+// console.log(findEvenNumberResult);
