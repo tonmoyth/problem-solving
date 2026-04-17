@@ -93,3 +93,20 @@ const sum = (numberArr) => {
 
 // const sumResult = sum([100, 400, 100]);
 // console.log(sumResult);
+
+// Count Vowels
+const CountVoels = (string) => {
+  let count = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i])) {
+      count++;
+    }
+  }
+
+  return count;
+};
+
+const countVoelsResult = CountVoels("Tonmoy Hasan");
+console.log(countVoelsResult);
