@@ -135,5 +135,21 @@ const factorialCalculation = (num) => {
   return result;
 };
 
-const factorialResult = factorialCalculation(12);
-console.log(factorialResult);
+// const factorialResult = factorialCalculation(12);
+// console.log(factorialResult);
+
+// Find the Minimum in an Array
+const findMinimumValue = (arr) => {
+  let minimumNum = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < minimumNum) {
+      minimumNum = arr[i];
+    }
+  }
+
+  return minimumNum;
+};
+
+// const findMinimunResult = findMinimumValue([4, 5, 7, 8]);
+// console.log(findMinimunResult);
