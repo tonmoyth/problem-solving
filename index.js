@@ -120,3 +120,20 @@ const findEvenNumber = (numArr) => {
 
 // const findEvenNumberResult = findEvenNumber([3, 5, 5, 7, 7]);
 // console.log(findEvenNumberResult);
+
+// Factorial Calculation
+const factorialCalculation = (num) => {
+  if (num < 0 || num > 12) {
+    return "Invalid input";
+  }
+  let result = 1;
+
+  for (let i = num; i >= 1; i--) {
+    result *= i;
+  }
+
+  return result;
+};
+
+const factorialResult = factorialCalculation(12);
+console.log(factorialResult);
