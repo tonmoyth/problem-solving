@@ -16,5 +16,27 @@ const reverseString = (str) => {
   return reversed;
 };
 
-const result = reverseString("Tonmoy");
-console.log(result);
+// const result = reverseString("Tonmoy");
+// console.log(result);
+
+// FizzBuzz
+const FizzBuzz = (n) => {
+  if (n >= 1 && n <= 100) {
+    for (let i = 1; i <= n; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("fizzBuzz");
+      } else if (i % 3 === 0) {
+        console.log("fizz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
+      } else {
+        console.log(i);
+      }
+    }
+  } else {
+    console.log("Invalid input");
+    return;
+  }
+};
+
+FizzBuzz(100);
