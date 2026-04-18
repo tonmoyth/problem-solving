@@ -144,10 +144,24 @@ const findMinimumValue = (arr) => {
 // const findMinimunResult = findMinimumValue([4, 5, 7, 8]);
 // console.log(findMinimunResult);
 
-//10.  Remove Duplicates from a List
+//10.Fibonacci Sequence
+const fibonacci = (n) => {
+  if (n === 1) return [0];
+
+  let result = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    result.push(result[i - 1] + result[i - 2]);
+  }
+
+  return result;
+};
+// console.log(fibonacci(10));
+
+// 13. Remove Duplicates from a List
 const removeDuplicates = (duplicateArr) => {
   return [...new Set(duplicateArr)];
 };
 
-const removeDuplicateResult = removeDuplicates([2, 3, 2, 3, 4, 5, 4, 3]);
-console.log(removeDuplicateResult);
+// const removeDuplicateResult = removeDuplicates([2, 3, 2, 3, 4, 5, 4, 3]);
+// console.log(removeDuplicateResult);
