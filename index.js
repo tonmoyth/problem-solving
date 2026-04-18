@@ -158,22 +158,23 @@ const fibonacci = (n) => {
 };
 // console.log(fibonacci(10));
 
-// 11. Find the Minimum in an Array
-const findMinimum = (nums) => {
-  let min = nums[0];
+// 11.  Check Prime Number
+const isPrime = (n) => {
+  if (n === 1) return false;
+  if (n === 2) return true;
 
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] < min) {
-      min = nums[i];
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
     }
   }
 
-  return min;
+  return true;
 };
 
-// console.log(findMinimum([4, 7, 2, 9, 5]));
+// console.log(isPrime(7));
 
-// 12. Multiplication Table
+// 12.   Multiplication Table
 const multiplicationTable = (n) => {
   if (n < 1 || n > 100) {
     return "Invalid input";
@@ -188,7 +189,7 @@ const multiplicationTable = (n) => {
   return result;
 };
 
-console.log(multiplicationTable(5));
+// console.log(multiplicationTable(5));
 
 // 13. Remove Duplicates from a List
 const removeDuplicates = (duplicateArr) => {
@@ -197,3 +198,25 @@ const removeDuplicates = (duplicateArr) => {
 
 // const removeDuplicateResult = removeDuplicates([2, 3, 2, 3, 4, 5, 4, 3]);
 // console.log(removeDuplicateResult);
+
+// 14. Check for Anagrams
+const celsiusToFahrenheit = (celsius) => {
+  return (celsius * 9) / 5 + 32;
+};
+
+// console.log(celsiusToFahrenheit(25));
+
+// 15. Count Occurrences of a Character
+const countOccurrences = (s, c) => {
+  let count = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === c) {
+      count++;
+    }
+  }
+
+  return count;
+};
+
+// console.log(countOccurrences("Tonmoy", "o"));
