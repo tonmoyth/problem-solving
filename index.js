@@ -158,6 +158,38 @@ const fibonacci = (n) => {
 };
 // console.log(fibonacci(10));
 
+// 11. Find the Minimum in an Array
+const findMinimum = (nums) => {
+  let min = nums[0];
+
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] < min) {
+      min = nums[i];
+    }
+  }
+
+  return min;
+};
+
+// console.log(findMinimum([4, 7, 2, 9, 5]));
+
+// 12. Multiplication Table
+const multiplicationTable = (n) => {
+  if (n < 1 || n > 100) {
+    return "Invalid input";
+  }
+
+  const result = [];
+
+  for (let i = 1; i <= 10; i++) {
+    result.push(`${n} x ${i} = ${n * i}`);
+  }
+
+  return result;
+};
+
+console.log(multiplicationTable(5));
+
 // 13. Remove Duplicates from a List
 const removeDuplicates = (duplicateArr) => {
   return [...new Set(duplicateArr)];
